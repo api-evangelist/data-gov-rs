@@ -1,0 +1,69 @@
+aid: data-gov-rs
+name: data.gov.rs
+description: >-
+  data.gov.rs is the national government open-data portal for the Republic of Serbia, operated by the
+  Office for IT and eGovernment. It runs the uData platform and exposes the uData REST API over
+  approximately 3,452 datasets, supporting programmatic dataset search, metadata retrieval, organization
+  listings, and resource access. The API provides a consistent JSON-over-HTTP interface and is harvested
+  into the EU data portal.
+kind: government
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/data-gov-rs/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - uData
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - National Government
+  - Serbia
+  - Europe
+created: '2026-06-23'
+modified: '2026-06-23'
+specificationVersion: '0.19'
+apis:
+  - aid: data-gov-rs:catalog
+    name: data.gov.rs uData REST API
+    description: >-
+      uData REST API for data.gov.rs, a consistent JSON-over-HTTP interface over a catalog of roughly
+      3,452 datasets. Standard endpoints under /api/1/ include /datasets/ (search and listing),
+      /organizations/, /reuses/, and /site/ (portal metrics). Base URL https://data.gov.rs/api/1/.
+    humanURL: https://data.gov.rs/en/
+    baseURL: https://data.gov.rs/api/1
+    tags:
+      - uData
+      - REST
+      - Open Data
+      - Catalog
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://udata.readthedocs.io/en/stable/api/
+      - type: Website
+        url: https://data.gov.rs/en/
+      - type: x-api-endpoint
+        url: https://data.gov.rs/api/1/site/
+  - aid: data-gov-rs:datasets
+    name: data.gov.rs Datasets endpoint
+    description: >-
+      Paginated dataset search and listing endpoint returning dataset metadata, organizations, and
+      resource references as JSON.
+    humanURL: https://data.gov.rs/en/datasets/
+    baseURL: https://data.gov.rs/api/1/datasets
+    tags:
+      - uData
+      - Datasets
+      - Search
+    properties:
+      - type: x-api-endpoint
+        url: https://data.gov.rs/api/1/datasets/?page_size=1
+common:
+  - type: Website
+    url: https://data.gov.rs/en/
+  - type: Documentation
+    url: https://udata.readthedocs.io/en/stable/api/
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,0 +1,20 @@
+name: data.gov.rs
+description: data.gov.rs uData open-data API live-verification for APIs.json cataloging.
+url: https://raw.githubusercontent.com/api-evangelist/data-gov-rs/refs/heads/main/review.yml
+created: '2026-06-23'
+modified: '2026-06-23'
+reviews:
+  - date: '2026-06-23'
+    rating: 4
+    summary: >-
+      data.gov.rs runs the uData platform and exposes a live, standardized open-data REST API. The
+      /api/1/site/ endpoint was probed and returned valid JSON portal metrics reporting 3,452 datasets
+      (plus 592 followers and multiple harvesters). The uData /api/1/ surface offers consistent
+      dataset, organization, and reuse endpoints.
+    endpoints:
+      - url: https://data.gov.rs/api/1/site/
+        status: 200
+        note: Live uData response verified; metrics report 3,452 datasets.
+      - url: https://data.gov.rs/api/1/datasets/?page_size=1
+        status: 200
+        note: Dataset search/listing endpoint returns JSON.

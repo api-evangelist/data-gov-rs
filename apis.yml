@@ -58,6 +58,8 @@ apis:
       - type: x-api-endpoint
         url: https://data.gov.rs/api/1/datasets/?page_size=1
 common:
+  - type: DomainSecurity
+    url: security/data-gov-rs-domain-security.yml
   - type: Website
     url: https://data.gov.rs/en/
   - type: Documentation

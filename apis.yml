@@ -31,6 +31,9 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/data-gov-rs.png
 url: https://raw.githubusercontent.com/api-evangelist/data-gov-rs/refs/heads/main/apis.yml
+x-docs-platform: mkdocs
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-25
 tags:
   - Open Data
   - uData

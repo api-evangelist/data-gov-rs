@@ -44,7 +44,7 @@ tags:
   - Serbia
   - Europe
 created: '2026-06-23'
-modified: '2026-06-23'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: data-gov-rs:catalog
@@ -83,6 +83,10 @@ apis:
       - type: x-api-endpoint
         url: https://data.gov.rs/api/1/datasets/?page_size=1
 common:
+  - url: https://data.gov.rs/sr/
+    type: Blog
+  - url: https://data.gov.rs/sr/datasets/recent.atom
+    type: BlogRSS
   - type: DomainSecurity
     url: security/data-gov-rs-domain-security.yml
   - type: Website

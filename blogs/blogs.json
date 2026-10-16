@@ -1,0 +1,21 @@
+{
+  "repo": "data-gov-rs",
+  "feeds": [
+    {
+      "source": "https://data.gov.rs/sr/",
+      "feed_url": "https://data.gov.rs/sr/datasets/recent.atom",
+      "title": "",
+      "saved": 3,
+      "method": "discovered"
+    },
+    {
+      "source": "https://data.gov.rs/sr/datasets/recent.atom",
+      "feed_url": "https://data.gov.rs/sr/datasets/recent.atom",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 3,
+  "fetched": "2026-10-10T13:15:00Z"
+}
